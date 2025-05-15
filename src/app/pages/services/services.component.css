@@ -1,0 +1,17 @@
+/* services.component.css */
+.services-hero {
+  position: relative;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.services-hero h1 {
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+
+.services-hero p {
+  color: white;
+  font-weight: 400;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}

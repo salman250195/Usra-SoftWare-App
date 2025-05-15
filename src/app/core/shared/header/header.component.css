@@ -1,0 +1,17 @@
+.navbar-brand img {
+  max-height: 35px;
+}
+
+@media (max-width: 767.98px) {
+  .navbar-brand {
+    font-size: 1.2rem !important;
+  }
+
+  .navbar-brand span {
+    white-space: nowrap;
+  }
+}
+
+.navbar-nav .nav-item {
+  margin-bottom: 6px; /* 6px ya 8px tak theek hai for tight layout */
+}

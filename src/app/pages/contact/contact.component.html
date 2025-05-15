@@ -1,0 +1,120 @@
+<!-- <div class="bg-dark text-white text-center py-5 mb-5">
+  <h1 class="display-5 fw-bold">Contact Us</h1>
+  <p class="lead">Let’s build something amazing together.</p>
+</div> -->
+<!-- <form (ngSubmit)="sendEmail()" #contactForms="ngForm">
+  <div class="mb-3">
+    <input type="text" class="form-control" name="name" placeholder="Your Name" [(ngModel)]="contact.name" required>
+  </div>
+  <div class="mb-3">
+    <input type="email" class="form-control" name="email" placeholder="Your Email" [(ngModel)]="contact.email" required>
+  </div>
+  <div class="mb-3">
+    <textarea class="form-control" name="message" rows="5" placeholder="Your Message" [(ngModel)]="contact.message" required></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Send Message</button>
+</form> -->
+
+
+<!-- <section class="py-5 bg-light" id="contact">
+  <div class="container">
+    <div class="row mb-5 text-center">
+      <div class="col-lg-8 offset-lg-2">
+        <h2 class="fw-bold text-primary mb-3">Get in Touch</h2>
+        <p class="lead">We’d love to hear from you! Send us a message and our team will respond as soon as possible.</p>
+      </div>
+    </div>
+
+    <div class="row g-5 align-items-stretch">
+      <div class="col-md-7">
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="bg-white p-4 shadow rounded">
+          <div class="mb-3">
+            <label for="name" class="form-label fw-semibold">Your Name</label>
+            <input formControlName="name" type="text" class="form-control" id="name" placeholder="Enter your name" />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label fw-semibold">Email address</label>
+            <input formControlName="email" type="email" class="form-control" id="email" placeholder="name@example.com" />
+          </div>
+          <div class="mb-3">
+            <label for="subject" class="form-label fw-semibold">Subject</label>
+            <input formControlName="subject" type="text" class="form-control" id="subject" placeholder="Inquiry Subject" />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label fw-semibold">Message</label>
+            <textarea formControlName="message" class="form-control" id="message" rows="5" placeholder="Write your message..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary px-4">Send Message</button>
+        </form>
+      </div>
+
+      <div class="col-md-5">
+        <div class="bg-white p-4 shadow rounded h-100">
+          <h5 class="text-dark fw-bold mb-3">Contact Details</h5>
+          <p><i class="bi bi-geo-alt text-primary"></i> Office 203, Tech Plaza, Mumbai - India</p>
+          <p><i class="bi bi-telephone text-success"></i> +91 8424959380</p>
+          <p><i class="bi bi-envelope text-danger"></i> contact@usrasoft.com</p>
+          <hr />
+          <h6 class="fw-bold mt-4">Business Hours</h6>
+          <p>Mon - Sat: 10:00 AM – 7:00 PM</p>
+          <p>Sunday: Closed</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+<section class="py-5 bg-light" id="contact">
+    <div class="container">
+      <div class="row mb-5 text-center">
+        <div class="col-lg-8 offset-lg-2">
+          <h2 class="fw-bold text-primary mb-3">Get in Touch</h2>
+          <p class="lead">We’d love to hear from you! Send us a message and our team will respond as soon as possible.</p>
+        </div>
+      </div>
+  
+      <div class="row g-4 align-items-stretch">
+        <!-- Contact Form -->
+        <div class="col-md-7">
+          <form (ngSubmit)="sendEmail(contactForms)" #contactForms="ngForm">
+            <div class="mb-3">
+              <label for="name" class="form-label fw-semibold">Your Name</label>
+              <input type="text" class="form-control" name="name" placeholder="Enter your name" [(ngModel)]="contact.name" required/>            
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label fw-semibold">Email address</label>
+              <input type="email" class="form-control" name="from_email" placeholder="name@example.com" [(ngModel)]="contact.from_email" required/>                
+            </div>
+            <div class="mb-3">
+              <label for="subject" class="form-label fw-semibold">Phone</label>
+              <input type="text" class="form-control" name="phone" placeholder="Enter contact"  [(ngModel)]="contact.phone" required/>
+            </div>
+            <div class="mb-3">
+              <label for="subject" class="form-label fw-semibold">Subject</label>
+              <input type="text" class="form-control" name="subject" placeholder="Inquiry Subject"  [(ngModel)]="contact.subject" required/>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label fw-semibold">Message</label>
+              <textarea class="form-control" name="message" rows="5" placeholder="Write your message..." [(ngModel)]="contact.message" required></textarea>            
+            </div>
+            <button type="submit" class="btn btn-primary px-4">Send Message</button>
+          </form>
+        </div>
+  
+        <!-- Contact Info -->
+        <div class="col-md-5">
+          <div class="bg-white p-4 shadow rounded h-100">
+            <h5 class="text-dark fw-bold mb-3">Contact Details</h5>
+            <p><i class="bi bi-geo-alt text-primary"></i> Office 203, Tech Plaza, Mumbai - India</p>
+            <p><i class="bi bi-telephone text-success"></i> +91 8424959380</p>
+            <p><i class="bi bi-envelope text-danger"></i> contact@usrasoft.com</p>
+            <hr />
+            <h6 class="fw-bold mt-4">Business Hours</h6>
+            <p>Mon - Sat: 10:00 AM – 7:00 PM</p>
+            <p>Sunday: Closed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
