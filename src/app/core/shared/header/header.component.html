@@ -6,18 +6,44 @@
     </button>
 
     <div class="collapse navbar-collapse justify-content-end" id="navMenu" #navbarCollapse>
-        <ul class="navbar-nav gap-1 gap-lg-3">
+        <ul class="navbar-nav gap-lg-3">
             <li class="nav-item">
                 <a class="nav-link text-white fw-semibold" routerLink="/" routerLinkActive="active" (click)="closeNavbar()">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white fw-semibold" routerLink="/core/shared/about" routerLinkActive="active" (click)="closeNavbar()">About</a>
+                <a class="nav-link text-white fw-semibold" routerLink="/shared/about" routerLinkActive="active">About</a>
             </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white fw-semibold" routerLink="/shared/services" routerLinkActive="active" class="nav-link dropdown-toggle"
+                href="#"
+                id="servicesDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">Services
+                </a>
+                    <ul class="dropdown-menu dropdown-menu-end custom-dropdown" aria-labelledby="servicesDropdown">
+                        <li>
+                            <a class="dropdown-item" routerLink="/shared/services/webdev" (click)="closeNavbar()">Web Development</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" routerLink="/shared/services/ui-ux" (click)="closeNavbar()">UI/UX Design</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" routerLink="/shared/services/mobile-apps" (click)="closeNavbar()">Mobile App Development</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" routerLink="/shared/services/digital-marketing" (click)="closeNavbar()">Digital Marketing</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" routerLink="/shared/services/domain-hosting" (click)="closeNavbar()">Domain & Hosting</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" routerLink="/shared/services/cybersecurity" (click)="closeNavbar()">Cybersecurity</a>
+                        </li>
+                    </ul>
+                </li>
             <li class="nav-item">
-                <a class="nav-link text-white fw-semibold" routerLink="/core/shared/services" routerLinkActive="active" (click)="closeNavbar()">Services</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white fw-semibold" routerLink="/core/shared/contact" routerLinkActive="active" (click)="closeNavbar()">Contact</a>
+                <a class="nav-link text-white fw-semibold" routerLink="/shared/contact" routerLinkActive="active" (click)="closeNavbar()">Contact</a>
             </li>
         </ul>
     </div>

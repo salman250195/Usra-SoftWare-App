@@ -10,7 +10,7 @@ const routes: Routes = [
       { path: 'home', component: HomeComponent }
     ]
   },
-  { path: 'core/shared', loadChildren: () => import('./core/shared/shared/shared.module').then(m => m.SharedModule) }
+  { path: 'shared', loadChildren: () => import('./core/shared/shared/shared.module').then(m => m.SharedModule) }
 ];
 
 @NgModule({

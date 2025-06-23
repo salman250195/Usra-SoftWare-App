@@ -15,3 +15,38 @@
 .navbar-nav .nav-item {
   margin-bottom: 6px; /* 6px ya 8px tak theek hai for tight layout */
 }
+
+.custom-dropdown {
+  background: linear-gradient(135deg, #ffffff, #f0f8ff);
+  border-radius: 10px;
+  padding: 10px 0;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  min-width: 220px;
+  border: none;
+}
+
+.custom-dropdown .dropdown-item {
+  padding: 10px 20px;
+  font-weight: 500;
+  color: #0b3d91;
+  transition: all 0.2s ease-in-out;
+}
+
+.custom-dropdown .dropdown-item:hover {
+  background-color: #e6f0ff;
+  color: #1a237e;
+  font-weight: 600;
+}
+
+.dropdown-menu .dropdown-item {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-size: 14.5px;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #f0f4ff;
+  color: #0d6efd;
+  border-radius: 6px;
+}
+

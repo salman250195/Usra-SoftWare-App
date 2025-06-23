@@ -10,21 +10,33 @@ import { ServicesComponent } from './pages/services/services.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { WebDevelopmentComponent } from './pages/web-development/web-development.component';
+import { MobileAppsComponent } from './pages/mobile-apps/mobile-apps.component';
+import { UiUxComponent } from './pages/ui-ux/ui-ux.component';
+import { DigitalMarketingComponent } from './pages/digital-marketing/digital-marketing.component';
+import { DomainHostingComponent } from './pages/domain-hosting/domain-hosting.component';
+import { CybersecruityComponent } from './pages/cybersecruity/cybersecruity.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     // HomeComponent,
     // AboutComponent,
-    ServicesComponent,
-    ContactComponent
+    // ServicesComponent,
+    // ContactComponent,
+    // WebDevelopmentComponent,
+    // MobileAppsComponent,
+    // UiUxComponent,
+    // DigitalMarketingComponent,
+    // DomainHostingComponent,
+    // CybersecruityComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CoreModule,
-    FormsModule,
-    ReactiveFormsModule,
+    // FormsModule,
+    // ReactiveFormsModule,
     HttpClientModule
   ],
   providers: [],
