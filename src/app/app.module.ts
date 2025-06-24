@@ -16,10 +16,12 @@ import { UiUxComponent } from './pages/ui-ux/ui-ux.component';
 import { DigitalMarketingComponent } from './pages/digital-marketing/digital-marketing.component';
 import { DomainHostingComponent } from './pages/domain-hosting/domain-hosting.component';
 import { CybersecruityComponent } from './pages/cybersecruity/cybersecruity.component';
+import { FloatingContactComponent } from './pages/floating-contact/floating-contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    FloatingContactComponent,
     // HomeComponent,
     // AboutComponent,
     // ServicesComponent,

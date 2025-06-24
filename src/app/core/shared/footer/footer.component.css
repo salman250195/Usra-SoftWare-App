@@ -1,0 +1,36 @@
+.footer-link {
+  color: #ccc;
+  text-decoration: none;
+  display: block;
+  padding: 3px 0;
+  transition: 0.3s ease;
+}
+.footer-link:hover {
+  color: #00ffd0;
+  transform: translateX(4px);
+}
+
+.social-icon {
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  font-size: 24px;
+  padding: 12px 14px;
+  border-radius: 50%;
+  z-index: 1000;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
