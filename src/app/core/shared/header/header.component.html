@@ -14,7 +14,7 @@
                 <a class="nav-link text-white fw-semibold" routerLink="/shared/about" routerLinkActive="active">About</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-white fw-semibold" routerLink="/shared/services" routerLinkActive="active" class="nav-link dropdown-toggle"
+                <a class="nav-link dropdown-toggle text-white fw-semibold" routerLinkActive="active" class="nav-link dropdown-toggle"
                 href="#"
                 id="servicesDropdown"
                 role="button"
@@ -85,6 +85,12 @@
                     <li>
                         <a class="dropdown-item usra-link" routerLink="/shared/services/cybersecurity" (click)="closeNavbar()">
                             <i class="bi bi-shield-lock-fill me-2"></i> Cybersecurity</a>
+                    </li>
+                    <!-- View All Services -->
+                    <li>
+                        <a class="dropdown-item usra-link" routerLink="/shared/services" (click)="closeNavbar()">
+                        <i class="bi bi-layers-fill me-2"></i> View All Services
+                        </a>
                     </li>
                 </ul>
 
