@@ -11,16 +11,16 @@
                 <a class="nav-link text-white fw-semibold" routerLink="/" routerLinkActive="active" (click)="closeNavbar()">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white fw-semibold" routerLink="/shared/about" routerLinkActive="active">About</a>
+                <a class="nav-link text-white fw-semibold" routerLink="/shared/about" routerLinkActive="active" (click)="closeNavbar()">About</a>
             </li>
-            <li class="nav-item dropdown">
+            <!-- <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle text-white fw-semibold" routerLinkActive="active" class="nav-link dropdown-toggle"
                 href="#"
                 id="servicesDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false">Services
-                </a>
+                </a> -->
                  <!-- <ul class="dropdown-menu dropdown-menu-end custom-dropdown" aria-labelledby="servicesDropdown">
                         <li>
                             <a class="dropdown-item" routerLink="/shared/services/webdev" (click)="closeNavbar()">Web Development</a>
@@ -62,7 +62,7 @@
                     </li>
                 </ul> -->
 
-                <ul class="dropdown-menu dropdown-menu-end usra-dropdown shadow-lg border-0" aria-labelledby="servicesDropdown">
+                <!-- <ul class="dropdown-menu dropdown-menu-end usra-dropdown shadow-lg border-0" aria-labelledby="servicesDropdown">
                     <li>
                         <a class="dropdown-item usra-link" routerLink="/shared/services/webdev" (click)="closeNavbar()">
                             <i class="bi bi-code-slash me-2"></i> Web Development</a>
@@ -86,14 +86,76 @@
                         <a class="dropdown-item usra-link" routerLink="/shared/services/cybersecurity" (click)="closeNavbar()">
                             <i class="bi bi-shield-lock-fill me-2"></i> Cybersecurity</a>
                     </li>
-                    <!-- View All Services -->
                     <li>
                         <a class="dropdown-item usra-link" routerLink="/shared/services" (click)="closeNavbar()">
                         <i class="bi bi-layers-fill me-2"></i> View All Services
                         </a>
                     </li>
-                </ul>
+                </ul> -->
 
+            <li class="nav-item dropdown position-static">
+                <a
+                    class="nav-link dropdown-toggle text-white fw-semibold"
+                    href="#"
+                    id="servicesDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                >
+                    Services
+                </a>
+
+            <div class="dropdown-menu w-100 mt-0 border-0 rounded-0 usra-dropdown shadow-lg" aria-labelledby="servicesDropdown">
+                <div class="container py-4">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <!-- Column 1 -->
+                    <div class="col">
+                    <h6 class="fw-bold text-primary">Development</h6>
+                    <a class="dropdown-item usra-link" routerLink="/shared/services/webdev" (click)="closeNavbar()">
+                        <i class="bi bi-code-slash me-2"></i> Web Development
+                    </a>
+                    <a class="dropdown-item usra-link" routerLink="/shared/services/mobile-apps" (click)="closeNavbar()">
+                        <i class="bi bi-phone me-2"></i> Mobile App Development
+                    </a>
+                    <a class="dropdown-item usra-link" routerLink="/shared/services/software-services" (click)="closeNavbar()">
+                        <i class="bi bi-gear-wide-connected me-2"></i> Software Services
+                    </a>
+                    </div>
+
+                    <!-- Column 2 -->
+                    <div class="col">
+                    <h6 class="fw-bold text-success">Design & Marketing</h6>
+                    <a class="dropdown-item usra-link" routerLink="/shared/services/ui-ux" (click)="closeNavbar()">
+                        <i class="bi bi-brush me-2"></i> UI/UX Design
+                    </a>
+                    <a class="dropdown-item usra-link" routerLink="/shared/services/digital-marketing" (click)="closeNavbar()">
+                        <i class="bi bi-graph-up-arrow me-2"></i> Digital Marketing
+                    </a>
+                    <a class="dropdown-item usra-link" routerLink="/shared/services/branding" (click)="closeNavbar()">
+                        <i class="bi bi-megaphone-fill me-2"></i> Branding
+                    </a>
+                    </div>
+
+                    <!-- Column 3 -->
+                    <div class="col">
+                    <h6 class="fw-bold text-danger">Infrastructure & Freelance</h6>
+                    <a class="dropdown-item usra-link" routerLink="/shared/services/domain-hosting" (click)="closeNavbar()">
+                        <i class="bi bi-globe me-2"></i> Domain & Hosting
+                    </a>
+                    <a class="dropdown-item usra-link" routerLink="/shared/services/cybersecurity" (click)="closeNavbar()">
+                        <i class="bi bi-shield-lock-fill me-2"></i> Cybersecurity
+                    </a>
+                    <a class="dropdown-item usra-link" routerLink="/shared/services/freelancing" (click)="closeNavbar()">
+                        <i class="bi bi-person-workspace me-2"></i> Freelancing
+                    </a>
+                    <hr class="my-2" />
+                    <a class="dropdown-item usra-link fw-semibold text-primary" routerLink="/shared/services" (click)="closeNavbar()">
+                        <i class="bi bi-layers-fill me-2"></i> View All Services
+                    </a>
+                    </div>
+                </div>
+                </div>
+            </div>
 
                 <!-- <ul class="dropdown-menu dropdown-menu-end usra-elegant-dropdown shadow" aria-labelledby="servicesDropdown">
                     <li>
@@ -217,7 +279,7 @@
         </ul> -->
 
 
-        </li>
+            </li>
             <li class="nav-item">
                 <a class="nav-link text-white fw-semibold" routerLink="/shared/contact" routerLinkActive="active" (click)="closeNavbar()">Contact</a>
             </li>

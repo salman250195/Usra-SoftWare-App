@@ -17,11 +17,16 @@ import { DigitalMarketingComponent } from './pages/digital-marketing/digital-mar
 import { DomainHostingComponent } from './pages/domain-hosting/domain-hosting.component';
 import { CybersecruityComponent } from './pages/cybersecruity/cybersecruity.component';
 import { FloatingContactComponent } from './pages/floating-contact/floating-contact.component';
+import { SoftwareServicesComponent } from './pages/software-services/software-services.component';
+import { FreelancingComponent } from './pages/freelancing/freelancing.component';
+import { BrandingComponent } from './pages/branding/branding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FloatingContactComponent,
+    // BrandingComponent,
+    // FreelancingComponent,
     // HomeComponent,
     // AboutComponent,
     // ServicesComponent,

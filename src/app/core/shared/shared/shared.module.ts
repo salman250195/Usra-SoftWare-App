@@ -13,6 +13,9 @@ import { CybersecruityComponent } from 'src/app/pages/cybersecruity/cybersecruit
 import { DomainHostingComponent } from 'src/app/pages/domain-hosting/domain-hosting.component';
 import { DigitalMarketingComponent } from 'src/app/pages/digital-marketing/digital-marketing.component';
 import { MobileAppsComponent } from 'src/app/pages/mobile-apps/mobile-apps.component';
+import { FreelancingComponent } from 'src/app/pages/freelancing/freelancing.component';
+import { SoftwareServicesComponent } from 'src/app/pages/software-services/software-services.component';
+import { BrandingComponent } from 'src/app/pages/branding/branding.component';
 
 
 @NgModule({
@@ -26,7 +29,10 @@ import { MobileAppsComponent } from 'src/app/pages/mobile-apps/mobile-apps.compo
     CybersecruityComponent,
     DomainHostingComponent,
     DigitalMarketingComponent,
-    MobileAppsComponent
+    MobileAppsComponent,
+    FreelancingComponent,
+    SoftwareServicesComponent,
+    BrandingComponent
   ],
   imports: [
     CommonModule,

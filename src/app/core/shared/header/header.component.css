@@ -310,3 +310,30 @@
   }
 } */
 
+.usra-dropdown {
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: 100% !important;
+  max-width: 1140px;
+  min-width: 300px;
+  padding: 1rem;
+  box-sizing: border-box;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+  position: absolute !important;
+}
+.usra-dropdown.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-width: 768px) {
+  .usra-dropdown {
+    max-height: 60vh; /* 80% of the viewport height */
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  }
+}
+

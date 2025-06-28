@@ -10,6 +10,9 @@ import { MobileAppsComponent } from 'src/app/pages/mobile-apps/mobile-apps.compo
 import { DigitalMarketingComponent } from 'src/app/pages/digital-marketing/digital-marketing.component';
 import { DomainHostingComponent } from 'src/app/pages/domain-hosting/domain-hosting.component';
 import { CybersecruityComponent } from 'src/app/pages/cybersecruity/cybersecruity.component';
+import { FreelancingComponent } from 'src/app/pages/freelancing/freelancing.component';
+import { SoftwareServicesComponent } from 'src/app/pages/software-services/software-services.component';
+import { BrandingComponent } from 'src/app/pages/branding/branding.component';
 
 const routes: Routes = [
   // { path: '', component: SharedComponent }
@@ -21,7 +24,10 @@ const routes: Routes = [
   { path: 'services/mobile-apps', component: MobileAppsComponent },
   { path: 'services/digital-marketing', component: DigitalMarketingComponent },
   { path: 'services/domain-hosting', component: DomainHostingComponent },
-  { path: 'services/cybersecurity', component: CybersecruityComponent }
+  { path: 'services/cybersecurity', component: CybersecruityComponent },
+  { path: 'services/freelancing', component: FreelancingComponent },
+  { path: 'services/software-services', component: SoftwareServicesComponent },
+  { path: 'services/branding', component: BrandingComponent }
 ];
 
 @NgModule({

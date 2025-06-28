@@ -6,10 +6,10 @@
 
 <footer class="footer-area bg-dark text-light pt-5 pb-3 mt-5 position-relative shadow-lg">
   <div class="container">
-    <div class="row gy-4">
+    <div class="row gy-4 align-items-start">
 
       <!-- Brand + Social -->
-      <div class="col-lg-4 col-md-6">
+      <div class="col-lg-3 col-md-6 h-100 d-flex flex-column">
         <h4 class="fw-bold text-brand mb-3">Usra Software</h4>
         <p>
           Digital excellence meets ethical values. We deliver high-quality tech solutions that are smart, scalable, and spiritually grounded.
@@ -22,7 +22,7 @@
       </div>
 
       <!-- Useful Links -->
-      <div class="col-lg-2 col-md-6">
+      <div class="col-lg-1 col-md-6 h-100 d-flex flex-column">
         <h6 class="text-uppercase fw-semibold mb-3">Links</h6>
         <ul class="list-unstyled small">
           <li><a [routerLink]="['/core/home']" class="footer-link">Home</a></li>
@@ -33,7 +33,7 @@
       </div>
 
       <!-- Our Services -->
-      <div class="col-lg-3 col-md-6">
+      <!-- <div class="col-lg-3 col-md-6">
         <h6 class="text-uppercase fw-semibold mb-3">Services</h6>
         <ul class="list-unstyled small">
           <li><a [routerLink]="['/shared/services/webdev']" class="footer-link">Web Development</a></li>
@@ -42,10 +42,46 @@
           <li><a [routerLink]="['/shared/services/digital-marketing']" class="footer-link">Digital Marketing</a></li>
           <li><a [routerLink]="['/shared/services/domain-hosting']" class="footer-link">Domain & Hosting</a></li><li><a [routerLink]="['/shared/services/cybersecurity']" class="footer-link">Cybersecurity</a></li>
         </ul>
+      </div> -->
+
+      <!-- Our Services -->
+      <div class="col-lg-5 col-md-6 h-100 d-flex flex-column">
+        <h6 class="text-uppercase fw-semibold mb-3">Our Services</h6>
+        <div class="row row-cols-1 row-cols-sm-2 g-3">
+          <!-- Development -->
+          <div class="col-md-4">
+            <h6 class="fw-bold text-primary mb-2">Development</h6>
+            <ul class="list-unstyled small">
+              <li><a [routerLink]="['/shared/services/webdev']" class="footer-link">Web Development</a></li>
+              <li><a [routerLink]="['/shared/services/mobile-apps']" class="footer-link">Mobile App Development</a></li>
+              <li><a [routerLink]="['/shared/services/software-services']" class="footer-link">Software Services</a></li>
+            </ul>
+          </div>
+
+          <!-- Design & Marketing -->
+          <div class="col-md-4">
+            <h6 class="fw-bold text-success mb-2">Design & Marketing</h6>
+            <ul class="list-unstyled small">
+              <li><a [routerLink]="['/shared/services/ui-ux']" class="footer-link">UI/UX Design</a></li>
+              <li><a [routerLink]="['/shared/services/digital-marketing']" class="footer-link">Digital Marketing</a></li>
+              <li><a [routerLink]="['/shared/services/branding']" class="footer-link">Branding</a></li>
+            </ul>
+          </div>
+
+          <!-- Infrastructure & Freelancing -->
+          <div class="col-md-4">
+            <h6 class="fw-bold text-danger mb-2">Infra & Freelance</h6>
+            <ul class="list-unstyled small">
+              <li><a [routerLink]="['/shared/services/domain-hosting']" class="footer-link">Domain & Hosting</a></li>
+              <li><a [routerLink]="['/shared/services/cybersecurity']" class="footer-link">Cybersecurity</a></li>
+              <li><a [routerLink]="['/shared/services/freelancing']" class="footer-link">Freelancing</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
 
       <!-- Contact Info -->
-      <div class="col-lg-3 col-md-6">
+      <div class="col-lg-3 col-md-6 h-100 d-flex flex-column">
         <h6 class="text-uppercase fw-semibold mb-3">Reach Us</h6>
         <p class="small mb-1"><i class="bi bi-geo-alt-fill me-2 text-danger"></i>Mumbai, India</p>
         <p class="small mb-1"><i class="bi bi-phone-fill me-2 text-warning"></i>+91-84249 59380</p>
