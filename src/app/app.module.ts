@@ -20,6 +20,7 @@ import { FloatingContactComponent } from './pages/floating-contact/floating-cont
 import { SoftwareServicesComponent } from './pages/software-services/software-services.component';
 import { FreelancingComponent } from './pages/freelancing/freelancing.component';
 import { BrandingComponent } from './pages/branding/branding.component';
+import { LocationStrategy, PathLocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,7 @@ import { BrandingComponent } from './pages/branding/branding.component';
     // ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [{ provide: LocationStrategy, useClass: PathLocationStrategy }],
   bootstrap: [AppComponent]
 })
 export class AppModule {
