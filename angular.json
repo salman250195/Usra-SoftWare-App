@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "usrasoft-app": {
+    "usrasoftware": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/usrasoft-app",
+            "outputPath": "dist/usrasoftware",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -75,10 +75,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "usrasoft-app:build:production"
+              "browserTarget": "usrasoftware:build:production"
             },
             "development": {
-              "browserTarget": "usrasoft-app:build:development"
+              "browserTarget": "usrasoftware:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -86,7 +86,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "usrasoft-app:build"
+            "browserTarget": "usrasoftware:build"
           }
         },
         "test": {
@@ -109,5 +109,5 @@
       }
     }
   },
-  "defaultProject": "usrasoft-app"
+  "defaultProject": "usrasoftware"
 }

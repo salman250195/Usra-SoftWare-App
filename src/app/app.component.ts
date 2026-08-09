@@ -10,7 +10,7 @@ export class AppComponent {
 
   constructor(private router: Router) {}
   
-  title = 'usrasoft-app';
+  title = 'usrasoftware';
 
   ngOnInit(): void {
     this.router.events.subscribe((event) => {
