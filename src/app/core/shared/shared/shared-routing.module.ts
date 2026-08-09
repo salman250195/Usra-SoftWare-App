@@ -13,6 +13,7 @@ import { CybersecruityComponent } from 'src/app/pages/cybersecruity/cybersecruit
 import { FreelancingComponent } from 'src/app/pages/freelancing/freelancing.component';
 import { SoftwareServicesComponent } from 'src/app/pages/software-services/software-services.component';
 import { BrandingComponent } from 'src/app/pages/branding/branding.component';
+import { ThankYouComponent } from 'src/app/pages/thank-you/thank-you.component';
 
 const routes: Routes = [
   // { path: '', component: SharedComponent }
@@ -27,7 +28,8 @@ const routes: Routes = [
   { path: 'services/cybersecurity', component: CybersecruityComponent },
   { path: 'services/freelancing', component: FreelancingComponent },
   { path: 'services/software-services', component: SoftwareServicesComponent },
-  { path: 'services/branding', component: BrandingComponent }
+  { path: 'services/branding', component: BrandingComponent },
+  { path: 'thank-you', component: ThankYouComponent }
 ];
 
 @NgModule({

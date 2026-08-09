@@ -1,0 +1,78 @@
+/* .thankyou-wrapper {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+.thankyou-card {
+  background: #ffffff;
+  padding: 60px 30px;
+  border-radius: 16px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.thankyou-card .icon {
+  font-size: 60px;
+  margin-bottom: 20px;
+} */
+
+
+.thankyou-hero {
+  min-height: 90vh;
+  position: relative;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.thankyou-box {
+  background: #ffffff;
+  padding: 60px 40px;
+  border-radius: 18px;
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.success-circle {
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(135deg, #28a745, #218838);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 42px;
+  margin: auto;
+}
+
+.next-steps ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.next-steps li {
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.action-buttons a {
+  min-width: 180px;
+}
+
+.dua {
+  font-style: italic;
+  color: #6c757d;
+  margin-top: 25px;
+}

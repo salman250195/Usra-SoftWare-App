@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 
 @Component({
@@ -12,7 +13,11 @@ export class ContactComponent implements OnInit {
 
   contactForm!: FormGroup;
 
-  constructor(private fb: FormBuilder, private http: HttpClient ) { }
+  constructor(
+              private fb: FormBuilder, 
+              private http: HttpClient, 
+              private router: Router 
+            ) { }
 
   contact = {
     name: '',
@@ -40,7 +45,7 @@ export class ContactComponent implements OnInit {
       this.contactForm.reset();
     }
   }
-
+  
   sendEmail(contactForms: any) {
     const templateParams = {
       name: this.contact.name,
@@ -52,10 +57,11 @@ export class ContactComponent implements OnInit {
     console.log('templateParams : ' , templateParams);
     
     emailjs.send('service_25jodlf', 'template_owbcmr7', templateParams, 'WMluz9wpAPeqs8iSN')
-      .then((response: EmailJSResponseStatus) => {
-        console.log('SUCCESS!', response.status, response.text);
-        alert('Message Sent Successfully!');
-        contactForms.reset();
+    .then((response: EmailJSResponseStatus) => {
+      console.log('SUCCESS!', response.status, response.text);
+      // alert('Message Sent Successfully!');
+      contactForms.reset();
+      this.router.navigate(['/shared/thank-you']);
       }, (error: any) => {
         console.log('FAILED...', error);
         alert('Message Failed to Send.');

@@ -16,6 +16,7 @@ import { MobileAppsComponent } from 'src/app/pages/mobile-apps/mobile-apps.compo
 import { FreelancingComponent } from 'src/app/pages/freelancing/freelancing.component';
 import { SoftwareServicesComponent } from 'src/app/pages/software-services/software-services.component';
 import { BrandingComponent } from 'src/app/pages/branding/branding.component';
+import { ThankYouComponent } from 'src/app/pages/thank-you/thank-you.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { BrandingComponent } from 'src/app/pages/branding/branding.component';
     MobileAppsComponent,
     FreelancingComponent,
     SoftwareServicesComponent,
-    BrandingComponent
+    BrandingComponent,
+    ThankYouComponent
   ],
   imports: [
     CommonModule,
