@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 
@@ -11,10 +11,10 @@ import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 })
 export class ContactComponent implements OnInit {
 
-  contactForm!: FormGroup;
+  contactForm!: UntypedFormGroup;
 
   constructor(
-              private fb: FormBuilder, 
+              private fb: UntypedFormBuilder,
               private http: HttpClient, 
               private router: Router 
             ) { }
