@@ -1,0 +1,288 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-gradient-custom shadow-sm px-4 py-3 fixed-top">
+    <img src="assets/logo5.png" alt="Usra Software Logo" height="40" class="me-2">
+    <a class="navbar-brand fw-bold fs-3" routerLink="/">Usra Software</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu" #navbarCollapse>
+        <ul class="navbar-nav gap-lg-3">
+            <li class="nav-item">
+                <a class="nav-link text-white fw-semibold" routerLink="/" routerLinkActive="active" (click)="closeNavbar()">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white fw-semibold" routerLink="/about" routerLinkActive="active" (click)="closeNavbar()">About</a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white fw-semibold" routerLinkActive="active" class="nav-link dropdown-toggle"
+                href="#"
+                id="servicesDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">Services
+                </a> -->
+                 <!-- <ul class="dropdown-menu dropdown-menu-end custom-dropdown" aria-labelledby="servicesDropdown">
+                        <li>
+                            <a class="dropdown-item" routerLink="/services/webdev" (click)="closeNavbar()">Web Development</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" routerLink="/services/ui-ux" (click)="closeNavbar()">UI/UX Design</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" routerLink="/services/mobile-apps" (click)="closeNavbar()">Mobile App Development</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" routerLink="/services/digital-marketing" (click)="closeNavbar()">Digital Marketing</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" routerLink="/services/domain-hosting" (click)="closeNavbar()">Domain & Hosting</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" routerLink="/services/cybersecurity" (click)="closeNavbar()">Cybersecurity</a>
+                        </li>
+                    </ul> -->
+                
+                <!-- <ul class="dropdown-menu dropdown-menu-end custom-dropdown shadow-lg border-0" aria-labelledby="servicesDropdown">
+                    <li>
+                        <a class="dropdown-item dropdown-link" routerLink="/services/webdev" (click)="closeNavbar()">🌐 Web Development</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item dropdown-link" routerLink="/services/ui-ux" (click)="closeNavbar()">🎨 UI/UX Design</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item dropdown-link" routerLink="/services/mobile-apps" (click)="closeNavbar()">📱 Mobile App Development</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item dropdown-link" routerLink="/services/digital-marketing" (click)="closeNavbar()">📊 Digital Marketing</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item dropdown-link" routerLink="/services/domain-hosting" (click)="closeNavbar()">🌍 Domain & Hosting</a>
+                    </li>
+                    <li><a class="dropdown-item dropdown-link" routerLink="/services/cybersecurity" (click)="closeNavbar()">🛡️ Cybersecurity</a>
+                    </li>
+                </ul> -->
+
+                <!-- <ul class="dropdown-menu dropdown-menu-end usra-dropdown shadow-lg border-0" aria-labelledby="servicesDropdown">
+                    <li>
+                        <a class="dropdown-item usra-link" routerLink="/services/webdev" (click)="closeNavbar()">
+                            <i class="bi bi-code-slash me-2"></i> Web Development</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item usra-link" routerLink="/services/ui-ux" (click)="closeNavbar()"><i class="bi bi-brush me-2"></i> UI/UX Design</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item usra-link" routerLink="/services/mobile-apps" (click)="closeNavbar()">
+                            <i class="bi bi-phone me-2"></i> Mobile App Development</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item usra-link" routerLink="/services/digital-marketing" (click)="closeNavbar()">
+                            <i class="bi bi-graph-up-arrow me-2"></i> Digital Marketing</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item usra-link" routerLink="/services/domain-hosting" (click)="closeNavbar()">
+                            <i class="bi bi-globe me-2"></i> Domain & Hosting</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item usra-link" routerLink="/services/cybersecurity" (click)="closeNavbar()">
+                            <i class="bi bi-shield-lock-fill me-2"></i> Cybersecurity</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item usra-link" routerLink="/services" (click)="closeNavbar()">
+                        <i class="bi bi-layers-fill me-2"></i> View All Services
+                        </a>
+                    </li>
+                </ul> -->
+
+            <li class="nav-item dropdown position-static">
+                <a
+                    class="nav-link dropdown-toggle text-white fw-semibold"
+                    href="#"
+                    id="servicesDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                >
+                    Services
+                </a>
+
+            <div class="dropdown-menu w-100 mt-0 border-0 rounded-0 usra-dropdown shadow-lg" aria-labelledby="servicesDropdown">
+                <div class="container py-4">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <!-- Column 1 -->
+                    <div class="col">
+                    <h6 class="fw-bold text-primary">Development</h6>
+                    <a class="dropdown-item usra-link" routerLink="/services/webdev" (click)="closeNavbar()">
+                        <i class="bi bi-code-slash me-2"></i> Web Development
+                    </a>
+                    <a class="dropdown-item usra-link" routerLink="/services/mobile-apps" (click)="closeNavbar()">
+                        <i class="bi bi-phone me-2"></i> Mobile App Development
+                    </a>
+                    <a class="dropdown-item usra-link" routerLink="/services/software-services" (click)="closeNavbar()">
+                        <i class="bi bi-gear-wide-connected me-2"></i> Software Services
+                    </a>
+                    </div>
+
+                    <!-- Column 2 -->
+                    <div class="col">
+                    <h6 class="fw-bold text-success">Design & Marketing</h6>
+                    <a class="dropdown-item usra-link" routerLink="/services/ui-ux" (click)="closeNavbar()">
+                        <i class="bi bi-brush me-2"></i> UI/UX Design
+                    </a>
+                    <a class="dropdown-item usra-link" routerLink="/services/digital-marketing" (click)="closeNavbar()">
+                        <i class="bi bi-graph-up-arrow me-2"></i> Digital Marketing
+                    </a>
+                    <a class="dropdown-item usra-link" routerLink="/services/branding" (click)="closeNavbar()">
+                        <i class="bi bi-megaphone-fill me-2"></i> Branding
+                    </a>
+                    </div>
+
+                    <!-- Column 3 -->
+                    <div class="col">
+                    <h6 class="fw-bold text-danger">Infrastructure & Freelance</h6>
+                    <a class="dropdown-item usra-link" routerLink="/services/domain-hosting" (click)="closeNavbar()">
+                        <i class="bi bi-globe me-2"></i> Domain & Hosting
+                    </a>
+                    <a class="dropdown-item usra-link" routerLink="/services/cybersecurity" (click)="closeNavbar()">
+                        <i class="bi bi-shield-lock-fill me-2"></i> Cybersecurity
+                    </a>
+                    <a class="dropdown-item usra-link" routerLink="/services/freelancing" (click)="closeNavbar()">
+                        <i class="bi bi-person-workspace me-2"></i> Freelancing
+                    </a>
+                    <hr class="my-2" />
+                    <a class="dropdown-item usra-link fw-semibold" routerLink="/services" (click)="closeNavbar()">
+                        <i class="bi bi-layers-fill me-2"></i> View All Services
+                    </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+                <!-- <ul class="dropdown-menu dropdown-menu-end usra-elegant-dropdown shadow" aria-labelledby="servicesDropdown">
+                    <li>
+                        <a class="dropdown-item usra-item" routerLink="/services/webdev" (click)="closeNavbar()">
+                            <i class="bi bi-code-slash"></i> 
+                            <span>Web Development</span>
+                        </a>
+                    </li>
+  
+                <li>
+                    <a class="dropdown-item usra-item" routerLink="/services/ui-ux" (click)="closeNavbar()">
+                        <i class="bi bi-palette"></i> 
+                        <span>UI/UX Design</span>
+                    </a>
+                </li>
+  
+                <li>
+                    <a class="dropdown-item usra-item" routerLink="/services/mobile-apps" (click)="closeNavbar()">
+                        <i class="bi bi-phone"></i> 
+                        <span>Mobile Apps</span>
+                    </a>
+                </li>
+  
+                <li>
+                    <a class="dropdown-item usra-item" routerLink="/services/digital-marketing" (click)="closeNavbar()">
+                        <i class="bi bi-bar-chart-line"></i> 
+                        <span>Digital Marketing</span>
+                    </a>
+                </li>
+  
+                <li>
+                    <a class="dropdown-item usra-item" routerLink="/services/domain-hosting" (click)="closeNavbar()">
+                        <i class="bi bi-hdd-stack"></i> 
+                        <span>Domain & Hosting</span>
+                    </a>
+                </li>
+  
+                <li>
+                    <a class="dropdown-item usra-item" routerLink="/services/cybersecurity" (click)="closeNavbar()">
+                        <i class="bi bi-shield-check"></i>
+                        <span>Cybersecurity</span>
+                    </a>
+                </li>
+                </ul> -->
+
+                <!-- <ul class="dropdown-menu dropdown-menu-end usra-premium-dropdown" aria-labelledby="servicesDropdown">
+                <li>
+                    <a class="dropdown-item usra-premium-item" routerLink="/services/webdev" (click)="closeNavbar()">
+                        <i class="bi bi-code-slash"></i>
+                        <span>Web Development</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="dropdown-item usra-premium-item" routerLink="/services/ui-ux" (click)="closeNavbar()">
+                        <i class="bi bi-vector-pen"></i>
+                        <span>UI/UX Design</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="dropdown-item usra-premium-item" routerLink="/services/mobile-apps" (click)="closeNavbar()">
+                    <i class="bi bi-phone-fill"></i>
+                    <span>Mobile Apps</span>
+                </a>
+            </li>
+
+            <li>
+                <a class="dropdown-item usra-premium-item" routerLink="/services/digital-marketing" (click)="closeNavbar()">
+                    <i class="bi bi-bar-chart"></i>
+                    <span>Digital Marketing</span>
+                </a>
+            </li>
+
+            <li>
+                <a class="dropdown-item usra-premium-item" routerLink="/services/domain-hosting" (click)="closeNavbar()">
+                    <i class="bi bi-cloud-arrow-down-fill"></i>
+                    <span>Domain & Hosting</span>
+                </a>
+            </li>
+
+            <li>
+                <a class="dropdown-item usra-premium-item" routerLink="/services/cybersecurity" (click)="closeNavbar()">
+                    <i class="bi bi-shield-lock-fill"></i>
+                    <span>Cybersecurity</span>
+                </a>
+            </li>
+        </ul> -->
+
+
+                <!-- <ul class="dropdown-menu dropdown-menu-end usra-elite-dropdown" aria-labelledby="servicesDropdown">
+            <li>
+                <a class="usra-elite-item" routerLink="/services/webdev" (click)="closeNavbar()">
+                    <i class="bi bi-code-slash"></i> Web Development
+                </a>
+            </li>
+            <li>
+                <a class="usra-elite-item" routerLink="/services/ui-ux" (click)="closeNavbar()">
+                    <i class="bi bi-vector-pen"></i> UI/UX Design
+                </a>
+            </li>
+            <li>
+                <a class="usra-elite-item" routerLink="/services/mobile-apps" (click)="closeNavbar()">
+                    <i class="bi bi-phone"></i> Mobile App Development
+                </a>
+            </li>
+            <li>
+                <a class="usra-elite-item" routerLink="/services/digital-marketing" (click)="closeNavbar()">
+                    <i class="bi bi-bar-chart-fill"></i> Digital Marketing
+                </a>
+            </li>
+            <li>
+                <a class="usra-elite-item" routerLink="/services/domain-hosting" (click)="closeNavbar()">
+                    <i class="bi bi-globe"></i> Domain & Hosting
+                </a>
+            </li>
+            <li>
+                <a class="usra-elite-item" routerLink="/services/cybersecurity" (click)="closeNavbar()">
+                    <i class="bi bi-shield-lock"></i> Cybersecurity
+                </a>
+            </li>
+        </ul> -->
+
+
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white fw-semibold" routerLink="/contact" routerLinkActive="active" (click)="closeNavbar()">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
