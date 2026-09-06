@@ -31,7 +31,6 @@
             ],
             "styles": [
               "src/styles.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/bootstrap-icons/font/bootstrap-icons.css"
             ],
             "scripts": [
@@ -43,7 +42,7 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
+                  "maximumWarning": "750kb",
                   "maximumError": "1mb"
                 },
                 {
@@ -75,10 +74,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "usrasoftware:build:production"
+              "buildTarget": "usrasoftware:build:production"
             },
             "development": {
-              "browserTarget": "usrasoftware:build:development"
+              "buildTarget": "usrasoftware:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -86,7 +85,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "usrasoftware:build"
+            "buildTarget": "usrasoftware:build"
           }
         },
         "test": {
